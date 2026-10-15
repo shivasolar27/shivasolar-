@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#f5f5ef">
+	<meta name="description" content="Solar panel cleaning, maintenance and repair in Dalelnagar, Sandila, Hardoi, Uttar Pradesh 241204. Keep your solar plant performing at its best with Shiva Solar.">
+	<title>Shiva Solar | Solar Care in Sandila, Hardoi</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			color-scheme: light;
+			--ink: #172b25;
+			--muted: #63736c;
+			--paper: #f5f5ef;
+			--white: #fff;
+			--green: #255b43;
+			--lime: #d7f06c;
+			--line: #dfe4da;
+			--serif: Georgia, 'Times New Roman', serif;
+			--sans: 'DM Sans', sans-serif;
+			--display: 'Manrope', sans-serif;
+		}
+
+		* { box-sizing: border-box; }
+		html { scroll-behavior: smooth; }
+		body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+		a { color: inherit; }
+		.wrap { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+
+		.topbar { height: 78px; display: flex; align-items: center; border-bottom: 1px solid rgba(23, 43, 37, .1); background: var(--paper); }
+		.nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+		.brand { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; }
+		.brand-mark { display: grid; width: 48px; height: 48px; flex: 0 0 48px; place-items: center; }
+		.brand-mark img { display: block; width: 100%; height: 100%; object-fit: contain; }
+		.brand-name { font-family: var(--display); font-size: 15px; font-weight: 800; letter-spacing: .04em; }
+		.brand-name span { display: block; margin-top: 1px; color: var(--muted); font-family: var(--sans); font-size: 8px; font-weight: 700; letter-spacing: .08em; }
+		.nav-links { display: flex; align-items: center; gap: 35px; }
+		.nav-links a { color: #42554d; font-size: 13px; font-weight: 600; text-decoration: none; }
+		.nav-links a:hover { color: var(--green); }
+		.nav-cta, .button { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; gap: 10px; padding: 0 19px; border: 0; border-radius: 4px; background: var(--green); color: white; font: 700 13px var(--sans); text-decoration: none; transition: background .2s, transform .2s; }
+		.nav-cta:hover, .button:hover { background: #194b34; transform: translateY(-1px); }
+		.button svg, .nav-cta svg { width: 16px; height: 16px; }
+
+		.hero { position: relative; min-height: 625px; display: flex; align-items: center; overflow: hidden; background: #203b31 url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2200&q=85') center 55% / cover no-repeat; color: var(--white); }
+		.hero::before { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(12, 32, 25, .88) 0%, rgba(12, 32, 25, .67) 47%, rgba(12, 32, 25, .08) 100%); content: ''; }
+		.hero-content { position: relative; z-index: 1; width: min(690px, 100%); padding-block: 95px; animation: enter .7s ease-out both; }
+		.eyebrow { display: flex; align-items: center; gap: 10px; color: var(--lime); font-size: 11px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+		.eyebrow::before { width: 28px; height: 1px; background: currentColor; content: ''; }
+		h1, h2, h3, p { margin-top: 0; }
+		.hero h1 { max-width: 700px; margin: 22px 0 19px; font-family: var(--display); font-size: clamp(44px, 6.2vw, 76px); font-weight: 600; letter-spacing: 0; line-height: 1.04; }
+		.hero h1 em { color: var(--lime); font-family: var(--serif); font-weight: 400; }
+		.hero-copy { max-width: 490px; margin-bottom: 31px; color: rgba(255, 255, 255, .82); font-size: 16px; line-height: 1.75; }
+		.hero .button { min-height: 52px; padding-inline: 22px; background: var(--lime); color: var(--ink); }
+		.hero .button:hover { background: #e4f89c; }
+		.hero-note { display: flex; align-items: center; gap: 10px; margin-top: 22px; color: rgba(255, 255, 255, .76); font-size: 12px; }
+		.hero-note svg { width: 16px; height: 16px; color: var(--lime); }
+		.hero-index { position: absolute; right: max(24px, calc((100vw - 1160px) / 2)); bottom: 32px; display: flex; align-items: center; gap: 13px; color: rgba(255,255,255,.78); font-size: 11px; letter-spacing: .1em; }
+		.hero-index::before { width: 40px; height: 1px; background: var(--lime); content: ''; }
+
+		.trust-strip { border-bottom: 1px solid var(--line); background: #fff; }
+		.trust-inner { min-height: 92px; display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; }
+		.trust-item { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 16px; color: #44564e; font-size: 12px; font-weight: 600; }
+		.trust-item + .trust-item { border-left: 1px solid var(--line); }
+		.trust-item svg { width: 19px; height: 19px; color: var(--green); }
+
+		.section { padding-block: 105px; }
+		.about-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 96px; align-items: start; }
+		.section-kicker { margin-bottom: 19px; color: var(--green); font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+		.section-title { margin-bottom: 0; font-family: var(--display); font-size: clamp(34px, 4vw, 50px); font-weight: 600; letter-spacing: 0; line-height: 1.13; }
+		.section-title em { color: var(--green); font-family: var(--serif); font-weight: 400; }
+		.about-copy { padding-top: 4px; color: var(--muted); font-size: 15px; line-height: 1.85; }
+		.about-copy p { margin-bottom: 17px; }
+		.about-place { display: inline-flex; align-items: center; gap: 8px; margin-top: 5px; color: var(--ink); font-size: 12px; font-weight: 700; }
+		.about-place svg { width: 16px; height: 16px; color: var(--green); }
+
+		.services { padding-block: 92px 102px; background: #e9eee6; }
+		.services-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 43px; }
+		.services-head .section-title { max-width: 480px; }
+		.services-head > p { max-width: 300px; margin-bottom: 5px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+		.service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+		.service { min-height: 245px; padding: 28px 26px; border: 1px solid #dce3d8; background: rgba(255,255,255,.8); transition: transform .2s, box-shadow .2s; }
+		.service:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(29, 61, 43, .08); }
+		.service-number { display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; color: #829187; font-size: 11px; font-weight: 700; letter-spacing: .08em; }
+		.service-number svg { width: 25px; height: 25px; color: var(--green); }
+		.service h3 { margin-bottom: 10px; font-family: var(--display); font-size: 19px; font-weight: 700; }
+		.service p { margin-bottom: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+
+		.contact { padding-block: 82px; background: var(--green); color: white; }
+		.contact-inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+		.contact .section-kicker { color: var(--lime); }
+		.contact h2 { max-width: 600px; margin-bottom: 12px; font-family: var(--display); font-size: clamp(32px, 4vw, 48px); font-weight: 600; line-height: 1.12; }
+		.contact-copy { margin-bottom: 0; color: rgba(255,255,255,.76); font-size: 14px; line-height: 1.7; }
+		.contact .button { flex: 0 0 auto; background: var(--lime); color: var(--ink); }
+		.contact .button:hover { background: #e4f89c; }
+		footer { padding-block: 28px; background: #172b25; color: rgba(255,255,255,.65); }
+		.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 11px; }
+		.footer-brand { display: inline-flex; align-items: center; gap: 8px; color: white; font-family: var(--display); font-size: 12px; font-weight: 800; letter-spacing: .06em; }
+		.footer-brand img { width: 27px; height: 27px; object-fit: contain; }
+		.footer-brand small { display: block; margin-top: 3px; color: var(--lime); font: 600 8px var(--sans); letter-spacing: .08em; }
+		.footer-email { color: rgba(255,255,255,.82); text-decoration: none; }
+		.footer-email:hover { color: var(--lime); }
+
+		@keyframes enter { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+		@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+		@media (max-width: 760px) {
+			.wrap { width: min(100% - 36px, 560px); }
+			.topbar { height: 70px; }
+			.nav-links { gap: 16px; }
+			.nav-links a { font-size: 12px; }
+			.nav-links a:first-child { display: none; }
+			.nav-cta { min-height: 40px; padding-inline: 12px; font-size: 12px; }
+			.hero { min-height: 590px; background-position: 58% center; }
+			.hero::before { background: linear-gradient(90deg, rgba(12,32,25,.86), rgba(12,32,25,.43)); }
+			.hero-content { padding-block: 76px; }
+			.hero h1 { font-size: clamp(42px, 10vw, 62px); }
+			.hero-copy { max-width: 440px; font-size: 15px; }
+			.trust-inner { grid-template-columns: 1fr; padding-block: 9px; }
+			.trust-item { justify-content: flex-start; padding: 12px 4px; }
+			.trust-item + .trust-item { border-top: 1px solid var(--line); border-left: 0; }
+			.section { padding-block: 74px; }
+			.about-grid { grid-template-columns: 1fr; gap: 25px; }
+			.services { padding-block: 72px; }
+			.services-head { align-items: start; flex-direction: column; margin-bottom: 29px; }
+			.service-grid { grid-template-columns: 1fr; gap: 11px; }
+			.service { min-height: auto; padding: 23px; }
+			.service-number { margin-bottom: 23px; }
+			.contact { padding-block: 65px; }
+			.contact-inner { align-items: flex-start; flex-direction: column; gap: 24px; }
+		}
+		@media (max-width: 420px) {
+			.wrap { width: calc(100% - 30px); }
+			.brand-mark { width: 41px; height: 41px; flex-basis: 41px; }
+			.brand-name { font-size: 13px; }
+			.nav-links { gap: 11px; }
+			.nav-cta { min-height: 38px; padding-inline: 10px; font-size: 11px; }
+			.nav-cta svg { display: none; }
+			.hero { min-height: 570px; }
+			.hero-index { display: none; }
+			.footer-inner { align-items: flex-start; flex-direction: column; }
+		}
+	</style>
+</head>
+<body>
+	<header class="topbar">
+		<div class="wrap nav">
+			<a class="brand" href="#top" aria-label="Shiva Solar home">
+				<span class="brand-mark"><img src="shiva-solar-logo.png" alt=""></span>
+				<span class="brand-name">SHIVA SOLAR<span>CLEAN ENERGY BRIGHTER TOMORROW</span></span>
+			</a>
+			<nav class="nav-links" aria-label="Main navigation">
+				<a href="#about">About</a>
+				<a href="#services">Services</a>
+				<a href="#contact">Contact</a>
+				<a class="nav-cta" href="mailto:shivasolar27@gmail.com?subject=Solar%20site%20inspection">Request a visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="top">
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="wrap">
+				<div class="hero-content">
+					<div class="eyebrow">Solar maintenance in Sandila</div>
+					<h1 id="hero-title">Keep your solar<br>working at its <em>brightest.</em></h1>
+					<p class="hero-copy">Reliable cleaning, maintenance and repairs for rooftop solar systems. Protect your investment and get more from every sunny day.</p>
+					<a class="button" href="mailto:shivasolar27@gmail.com?subject=Free%20solar%20site%20inspection">Book a free site inspection <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></a>
+					<div class="hero-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Dalelnagar, Sandila, Hardoi, Uttar Pradesh 241204</div>
+				</div>
+			</div>
+			<div class="hero-index" aria-hidden="true">SOLAR CARE, SANDILA</div>
+		</section>
+
+		<div class="trust-strip" aria-label="Service highlights">
+			<div class="wrap trust-inner">
+				<div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v5c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>Careful, dependable service</div>
+				<div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18m9-9H3"/><circle cx="12" cy="12" r="9"/></svg>Residential &amp; commercial systems</div>
+				<div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="M9 12h6m-3-3v6"/></svg>Local support when you need it</div>
+			</div>
+		</div>
+
+		<section class="section" id="about">
+			<div class="wrap about-grid">
+				<div>
+					<div class="section-kicker">A local team. Long-term care.</div>
+					<h2 class="section-title">Good solar deserves <em>good care.</em></h2>
+				</div>
+				<div class="about-copy">
+					<p>Shiva Solar helps homeowners and businesses get lasting value from their solar systems. Based in Dalelnagar, Sandila, we take care of the practical work that keeps rooftop plants clean, safe and running smoothly.</p>
+					<p>From scheduled panel washing to electrical checks and breakdown repairs, our focus is straightforward: attentive service, clear communication and dependable support for your energy investment.</p>
+					<div class="about-place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Dalelnagar, Sandila, Hardoi, Uttar Pradesh 241204</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services" id="services">
+			<div class="wrap">
+				<div class="services-head">
+					<div>
+						<div class="section-kicker">What we take care of</div>
+						<h2 class="section-title">Practical support for <em>your plant.</em></h2>
+					</div>
+					<p>Routine attention can help spot small issues early and keep your system in good working order.</p>
+				</div>
+				<div class="service-grid">
+					<article class="service">
+						<div class="service-number"><span>01 / CLEANING</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M6 16l3-8 4 2 3-6 3 2"/><path d="m8 4 1-2m7 4 2-1"/></svg></div>
+						<h3>Solar panel cleaning</h3>
+						<p>Careful panel washing to clear away dust and residue that can build up over time.</p>
+					</article>
+					<article class="service">
+						<div class="service-number"><span>02 / INSPECTION</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/></svg></div>
+						<h3>Inverter &amp; wiring checks</h3>
+						<p>Routine electrical inspections to identify faults and help prevent avoidable interruptions.</p>
+					</article>
+					<article class="service">
+						<div class="service-number"><span>03 / REPAIR</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a5 5 0 0 0-6.6 6.6L3 18l3 3 5.1-5.1a5 5 0 0 0 6.6-6.6L14 13l-3-3 3.7-3.7Z"/></svg></div>
+						<h3>Breakdown repairs</h3>
+						<p>Responsive troubleshooting and repair support to get your solar plant back on track.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact" id="contact">
+			<div class="wrap contact-inner">
+				<div>
+					<div class="section-kicker">Let’s get your system looked after</div>
+					<h2>Ready for a little more peace of mind?</h2>
+					<p class="contact-copy">Tell us about your solar setup and we’ll help you plan the next step.</p>
+				</div>
+				<a class="button" href="mailto:shivasolar27@gmail.com?subject=Solar%20service%20enquiry">Email Shiva Solar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></a>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="wrap footer-inner">
+			<div class="footer-brand"><img src="shiva-solar-logo.png" alt=""><span>SHIVA SOLAR<small>CLEAN ENERGY BRIGHTER TOMORROW</small></span></div>
+			<a class="footer-email" href="mailto:shivasolar27@gmail.com">shivasolar27@gmail.com</a>
+			<span>© 2026 Shiva Solar · Dalelnagar, Sandila, Hardoi, Uttar Pradesh 241204</span>
+		</div>
+	</footer>
+</body>
+</html>
